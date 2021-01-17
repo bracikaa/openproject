@@ -80,6 +80,14 @@ a.button
     &:hover, &:focus
       border-color: var(--button--alt-highlight-background-hover-color)
 
+  &.-hello-world
+    @include button-style(var(--button-hello-world-background-color), var(--button-hello-world-background-hover-color), var(--button-style))
+    @include button-style(var(--button--hello-world-background-color), var(--button--hello-world-background-hover-color), var(--button-style))
+    border-color: pink
+
+    &:hover, &:focus
+      border-color: pink
+
   &.-active
     @include button-style(var(--button--active-background-color), var(--button--active-background-color), var(--button--active-font-color), var(--button-style))
     border-color: var(--button--active-border-color)

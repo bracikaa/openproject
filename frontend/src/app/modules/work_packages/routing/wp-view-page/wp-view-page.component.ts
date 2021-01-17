@@ -44,6 +44,7 @@ import {ZenModeButtonComponent} from "core-components/wp-buttons/zen-mode-toggle
 import {WorkPackageSettingsButtonComponent} from "core-components/wp-buttons/wp-settings-button/wp-settings-button.component";
 import {of} from "rxjs";
 import {WorkPackageFoldToggleButtonComponent} from "core-components/wp-buttons/wp-fold-toggle-button/wp-fold-toggle-button.component";
+import { HelloWorldButtonComponent } from "core-app/modules/helloworld/hello-world.component";
 
 @Component({
   selector: 'wp-view-page',
@@ -61,6 +62,9 @@ import {WorkPackageFoldToggleButtonComponent} from "core-components/wp-buttons/w
 })
 export class WorkPackageViewPageComponent extends PartitionedQuerySpacePageComponent implements OnInit {
   toolbarButtonComponents:ToolbarButtonComponentDefinition[] = [
+    {
+      component: HelloWorldButtonComponent
+    },
     {
       component: WorkPackageCreateButtonComponent,
       inputs: {

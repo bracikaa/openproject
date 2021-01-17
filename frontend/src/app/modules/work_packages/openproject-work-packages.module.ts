@@ -168,6 +168,8 @@ import {BackButtonComponent} from "core-app/modules/common/back-routing/back-but
 import {DatePickerModal} from "core-components/datepicker/datepicker.modal";
 import {WorkPackagesTableComponent} from "core-components/wp-table/wp-table.component";
 import {WorkPackageGroupToggleDropdownMenuDirective} from "core-components/op-context-menu/handlers/wp-group-toggle-dropdown-menu.directive";
+import { OpenProjectHelloWorldModule } from '../helloworld/openproject-hello-world.module';
+import { HelloWorldModal } from 'core-app/components/modals/hello-world-modal/hello-world.modal';
 
 @NgModule({
   imports: [
@@ -179,6 +181,8 @@ import {WorkPackageGroupToggleDropdownMenuDirective} from "core-components/op-co
     OpenprojectEditorModule,
 
     OpenprojectAttachmentsModule,
+
+    OpenProjectHelloWorldModule,
 
     OpenprojectBcfModule,
 
@@ -362,6 +366,7 @@ import {WorkPackageGroupToggleDropdownMenuDirective} from "core-components/op-co
     SaveQueryModal,
     WpDestroyModal,
     DatePickerModal,
+    HelloWorldModal,
 
     // CustomActions
     WpCustomActionComponent,

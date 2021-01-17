@@ -77,6 +77,7 @@ import {OpenprojectMembersModule} from "core-app/modules/members/members.module"
 import {OpenprojectEnterpriseModule} from "core-components/enterprise/openproject-enterprise.module";
 import {OpenprojectAugmentingModule} from "core-app/modules/augmenting/openproject-augmenting.module";
 import {RevitAddInSettingsButtonService} from "core-app/modules/bim/revit_add_in/revit-add-in-settings-button.service";
+import { OpenProjectHelloWorldModule } from './modules/helloworld/openproject-hello-world.module';
 
 @NgModule({
   imports: [
@@ -138,6 +139,9 @@ import {RevitAddInSettingsButtonService} from "core-app/modules/bim/revit_add_in
 
     // Augmenting Module
     OpenprojectAugmentingModule,
+
+    //Hello World Testing Module
+    OpenProjectHelloWorldModule
   ],
   providers: [
     { provide: States, useValue: new States() },
